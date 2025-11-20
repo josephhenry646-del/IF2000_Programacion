@@ -1,8 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
-
-// Versión muy simple de Avion, pensada para principiantes.
+
 public class Avion {
     private String matricula;
     private String modelo;
