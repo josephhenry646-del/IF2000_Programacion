@@ -43,12 +43,12 @@ public class Reservacion {
         return r;
     }
 
-    // Versión simple que ignora la petición de asientos específicos y usa asignación automática.
+    
     public static Resultado reservarConAsientos(Vuelo vuelo, Pasajero pasajero, String clase, java.util.List<String> seats) {
         return reservar(vuelo, pasajero, clase, seats == null ? 0 : seats.size());
     }
 
-    // Instancia simple de una reservación (no usada por la UI simplificada)
+    
     private String codigo;
     private Vuelo vuelo;
     private Pasajero pasajero;
