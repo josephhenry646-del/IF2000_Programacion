@@ -11,7 +11,7 @@ import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 
-// Interfaz gráfica más completa basada en la imagen proporcionada.
+
 public class MainUI extends JFrame {
     private static final String ORIGEN = "Costa Rica";
     private static final String[] DESTINOS = new String[] {
