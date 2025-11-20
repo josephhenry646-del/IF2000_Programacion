@@ -22,7 +22,7 @@ public class Reservacion {
             r.mensaje = "No hay disponibilidad.";
             return r;
         }
-        // asigna asientos automáticamente (la clase Avion hace la tarea)
+      )
         java.util.List<String> asignadas = vuelo.getAvion().reservarAsientosAuto(clase, cantidad);
         if (asignadas == null) {
             r.exito = false;
