@@ -6,7 +6,7 @@ public class Reservacion {
         public Factura factura;
     }
 
-    // Contadores simples para generar códigos legibles (no UUIDs)
+    
     private static int nextTiquete = 1;
     private static int nextFactura = 1;
 
