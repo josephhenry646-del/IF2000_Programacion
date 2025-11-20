@@ -12,7 +12,6 @@ public class Factura {
         this.fecha = LocalDateTime.now();
     }
 
-    // Constructor de conveniencia que genera un código automáticamente
     public Factura(Tiquete tiquete) {
         this.codigoFactura = "F-" + java.util.UUID.randomUUID().toString().substring(0,8).toUpperCase();
         this.tiquete = tiquete;

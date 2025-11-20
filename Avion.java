@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Versión muy simple de Avion, pensada para principiantes.
 public class Avion {
     private String matricula;
     private String modelo;
@@ -11,13 +10,12 @@ public class Avion {
     private int ocupadosEconomica;
 
     public Avion(String modelo) {
-        // valores por defecto simples
         this(modelo, 10, 20);
     }
 
     public Avion(String modelo, int capacidadEjecutiva, int capacidadEconomica) {
         this.modelo = modelo;
-        this.matricula = "AV-" + System.currentTimeMillis() % 10000; // id simple
+        this.matricula = "AV-" + System.currentTimeMillis() % 10000; 
         this.capacidadEjecutiva = capacidadEjecutiva;
         this.capacidadEconomica = capacidadEconomica;
         this.ocupadosEjecutiva = 0;
@@ -26,7 +24,6 @@ public class Avion {
 
     public String getModelo() { return modelo; }
 
-    // Devuelve una lista simple de asientos disponibles como E1, E2... o C1, C2...
     public List<String> getAvailableSeats(String clase) {
         List<String> res = new ArrayList<>();
         if ("EJECUTIVA".equalsIgnoreCase(clase)) {
@@ -41,7 +38,6 @@ public class Avion {
         return res;
     }
 
-    // Reserva asientos automáticamente y devuelve los identificadores asignados.
     public List<String> reservarAsientosAuto(String clase, int cantidad) {
         if (!hayDisponibilidad(clase, cantidad)) return null;
         List<String> asignadas = new ArrayList<>();
